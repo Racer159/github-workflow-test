@@ -12,5 +12,3 @@ jobs:
     steps:
       - name: Action variables
         uses: Racer159/github-workflow-test@6f09313eeea1debfd91b7b1545a86ec6fad74503
-        with:
-          req-wo-default: 'Override'
