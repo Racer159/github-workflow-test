@@ -1,0 +1,16 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Action variables
+        uses: Racer159/github-workflow-test
+        with:
+          req-wo-default: 'Override'

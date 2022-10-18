@@ -1,0 +1,20 @@
+name: 'Env Action Test'
+description: 'Prints the environment variables given to the action (not for use in private repos)'
+inputs:
+  req-w-default:
+    description: 'Required with default'
+    required: true
+    default: 'Required'
+  req-wo-default:
+    description: 'Required without default'
+    required: true
+  nreq-w-default:
+    description: 'Not required with default'
+    required: false
+    default: 'Not Required'
+  nreq-wo-default:
+    description: 'Not required without default'
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
